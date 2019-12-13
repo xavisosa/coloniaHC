@@ -20,6 +20,7 @@
 	} catch (Exception $e) {
 		echo "Service unavialable.<br>Error de configuración: ";
 		echo $e->getMessage();
+		header("refresh:3,url=../index.php");
 	}
  
 ?>
