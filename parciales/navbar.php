@@ -14,6 +14,11 @@
 		<div class="collapse navbar-collapse" id="togMenu">
 		<?php if ($conectado) { ?>
 			<!-- Si esta conectado mostrar avatar y nombre -->
+			<div class="d-flex ml-auto flex-row justify-content-center">
+				<a href="inscripcion.php" class=class="nav-item nav-link m-2 menu-item btn btn-outline-light">
+					Inscripción
+				</a>
+			</div>
 			<div class="navbar-nav ml-auto text-center">
 				<a href="#" class="nav-item nav-link active">
 					<img src="imagen/img-avatar1.png" alt="avatar" 

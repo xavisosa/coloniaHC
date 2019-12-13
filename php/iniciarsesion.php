@@ -2,6 +2,7 @@
 
     include_once('conexion.php');
     session_start(["name" => "colonia_user"]);
+    $msj = "Consultar al adminstrador de la web.";
 
     // Negar empty, no usar isset, dejarlo solo para el $_SESSION
     if (isset($_POST['user']) && isset($_POST['clave'])) {
@@ -14,14 +15,14 @@
             $_SESSION['user'] = $fila['nombre'].' '.$fila['apellido'];
         }
         if(!empty($_SESSION['id_user']) && !empty($_SESSION['user'])){
-            echo "Iniciando sesión...";
-            header("refresh:3,url=../index.php");    
+            $msj = "Iniciando sesión...";
         } else {
-            echo "Usuario y/o clave incorrecta.";
-            header("refresh:3,url=../index.php");
+            $msj = "Usuario y/o clave incorrecta.";
         } 
     }
     $conn->close();
+    echo $msj;
+    header("refresh:3,url=../index.php");
 ?>
 
 
