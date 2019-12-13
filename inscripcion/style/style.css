@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div#nuevo-usuario {
+    padding-top: 50px;
+    text-align: center;
+}
+
+div#info {
+    background-color: #bbdefb;
+    padding: 2px 1px;
+    text-align: right;
+    font-family: Verdana, sans-serif !important;
+    font-size: medium;
+    text-decoration: white;
+}
+
+a.navbar-brand{
+    font-family: 'Pacifico', cursive !important;
+    font-size: x-large;
+}
+
+nav {
+    background-color: #2e7d32 !important;
+}

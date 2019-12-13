@@ -1,0 +1,53 @@
+.socioL{
+  font-size: 25px;
+  font-weight: bold;
+}
+.inscripcion{
+  padding: 20px 10%;
+  margin: 20px;
+}
+#visorArchivo{
+  height: 150px;
+  width: 150px;
+}
+/** De aca para abajo todo codigo para los input radio con animacion **/
+form input[type="radio"]{
+  display: none;
+}
+form .socio{
+  padding: 5px 15px 5px 51px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0074D9;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+form .socio:hover{
+  background: rgba(0, 116, 217, 0.1);
+}
+/**before **/
+form .socio:before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: none;
+  border: 3px solid #0074D9;
+  border-radius: 50%;
+  position: absolute;
+  left: 17px;
+  top: 9px;
+}
+form input[type="radio"]:checked + label{
+  padding: 5px 15px;
+  background: #0074D9;
+  border-radius: 2px;
+  color: white;
+}
+form input[type="radio"]:checked + label:before{
+  display: none;
+}
